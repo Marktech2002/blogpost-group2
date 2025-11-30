@@ -33,7 +33,7 @@ export function ArticleHero({ post }: ArticleHeroProps) {
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-full bg-white/20 overflow-hidden">
                 <Image
-                  src={`/diverse-group-avatars.png?height=24&width=24&query=avatar ${post.author}`}
+                  src={`${post.avatar || '/placeholder-avatar.png'}`}
                   alt={post.author}
                   width={24}
                   height={24}

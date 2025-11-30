@@ -6,6 +6,7 @@ import { SocialShare } from "@/components/social-share"
 import { YouMayAlsoLike } from "@/components/you-may-also-like"
 import { NewsletterSignup } from "@/components/newsletter-signup"
 import { mockBlogs } from "@/data/mock-blogs"
+import Image from "next/image"
 
 interface BlogPostPageProps {
   params: Promise<{ id: string }>
@@ -52,6 +53,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             {/* Author & ID Line */}
             <div className="flex flex-wrap items-center justify-between mb-8 pb-6 border-b border-border gap-4">
               <div className="flex items-center gap-2 font-mono text-sm">
+                <span className="">
+               <Image
+                src={`${post.avatar || '/placeholder-avatar.png'}`}
+                alt={post.author}
+                width={24}
+                height={24}
+                className="w-6 h-6 rounded-full object-cover"
+              />
+                </span>
                 <span className="font-normal md:text-[32px]">{post.author}</span>
                 <span className="text-muted-foreground">—</span>
                 <span className="text-muted-foreground md:text-[32px]">{post.idNumber}</span>

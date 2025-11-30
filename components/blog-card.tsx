@@ -50,7 +50,7 @@ export function BlogCard({ post, featured = false, compact = false }: BlogCardPr
             <div className="flex items-center gap-2">
               <div className="w-5 h-5 rounded-full bg-muted overflow-hidden">
                 <Image
-                  src={`/diverse-group-avatars.png?height=20&width=20&query=avatar ${post.author}`}
+                  src={`${post.avatar}`}
                   alt={post.author}
                   width={20}
                   height={20}
@@ -116,7 +116,7 @@ export function BlogCard({ post, featured = false, compact = false }: BlogCardPr
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-full bg-muted overflow-hidden">
             <Image
-              src={`/diverse-group-avatars.png?height=24&width=24&query=avatar ${post.author}`}
+              src={`${post.avatar}`}
               alt={post.author}
               width={24}
               height={24}

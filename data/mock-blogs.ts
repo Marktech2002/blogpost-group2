@@ -2,6 +2,7 @@ export interface BlogPost {
   id: string
   title: string
   author: string
+  avatar?: string
   idNumber: string
   date: string
   excerpt: string
@@ -20,6 +21,7 @@ export const mockBlogs: BlogPost[] = [
     id: "black-muse-festival",
     title: "Black Muse Festival Kicks Off in Benin City with a New Sculpture Park",
     author: "Ahmed Opeyemi Abdulmukit",
+    avatar: "/ahmed.png",
     idNumber: "22D/7HLS/222",
     date: "November 28, 2025",
     excerpt:
@@ -44,6 +46,7 @@ Striking pewter studded epaulettes silver zips inner drawstring waist channel ur
     id: "mowaa-vision",
     title: "MOWAA's Vision: A Cultural Ecosystem Under Construction",
     author: "SULEIMAN JAMIU ABIOLA",
+    avatar: "/suleiman.png",
     idNumber: "22D/7HLS/225",
     date: "November 28, 2025",
     excerpt:
@@ -71,6 +74,7 @@ Though the opening has been postponed due to protests, MOWAA’s long-term ambit
     id: "controversy-mowaa",
     title: "Controversy as Protests Surround Opening of MOWAA Museum",
     author: "ISIAKA SHERIF OLADIPUPO",
+    avatar: "/isiaka.png",
     idNumber: "22D/7HLS/224",
     date: "November 28, 2025",
     excerpt:
@@ -96,6 +100,7 @@ For many, MOWAA was intended to be a beacon of West African art — with galleri
     id: "cultural-ownership-debate",
     title: "Inside the Debate Over Cultural Ownership at MOWAA",
     author: "SHANGOTOYE BABATUNDE STEPHEN",
+    avatar: "/shogotemi.png",
     idNumber: "22D/7HLS/227",
     date: "November 28, 2025",
     excerpt:
@@ -121,6 +126,7 @@ Museum leadership emphasizes education, conservation, and public access — not 
     id: "fela-kuti-legacy",
     title: 'Fela Kuti\'s Legacy Returns to Lagos with "Afrobeat Rebellion" Exhibition',
     author: "ADERIBIGBE NAHEEM OLALEKAN",
+    avatar: "/aderibigbe.png",
     idNumber: "22D/7HLS/226",
     date: "November 28, 2025",
     excerpt:
@@ -146,6 +152,7 @@ Also on offer: listening booths with his voice and interviews, film screenings, 
     id: "fela-queens",
     title: "Why Fela's Queens Are Finally Getting Their Spotlight in Lagos",
     author: "ADEKUNLE RIDWAN",
+    avatar: "/adekunle.png",
     idNumber: "22D/7HLS/235",
     date: "November 28, 2025",
     excerpt:
@@ -171,6 +178,7 @@ For visitors, especially younger audiences, this section is deeply educational. 
     id: "afrobeat-rebellion-inside",
     title: "Art, Sound, Memory: Inside the Afrobeat Rebellion Exhibition",
     author: "Kpatako Ahmed",
+    avatar: "/ahmed.png",
     idNumber: "22D/7HLS/228",
     date: "November 28, 2025",
     excerpt:
